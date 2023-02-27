@@ -2,10 +2,13 @@ import Navbar from '@/components/layout/Navbar'
 import AaltoExplorer from '@/components/sections/AaltoExplorer'
 import Campus from '@/components/sections/Campus'
 import Community from '@/components/sections/Community'
+import ContactUs from '@/components/sections/ContactUs'
 import Courses from '@/components/sections/Courses'
 import Events from '@/components/sections/Events'
 import Hero from '@/components/sections/Hero'
+import Information from '@/components/sections/Information'
 import QuickLinks from '@/components/sections/QuickLinks'
+import Research from '@/components/sections/Research'
 import Schools from '@/components/sections/Schools'
 import Spotlight from '@/components/sections/Spotlight'
 import Head from 'next/head'
@@ -20,7 +23,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Hero />
       <Spotlight />
       <Events />
@@ -30,6 +32,9 @@ export default function Home() {
       <Campus />
       <Community />
       <Courses />
+      <Information />
+      <Research />
+      <ContactUs />
     </>
   )
 }

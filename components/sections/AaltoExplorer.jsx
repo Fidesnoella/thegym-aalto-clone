@@ -9,7 +9,7 @@ export default function AaltoExplorer() {
                 <MainWrapper>
                     <div className="bg-[#ffcd00] relative top-36">
                         <h1 className="p-10 text-[4.6875rem] leading-[5.5rem] text-black font-bold">Explore Aalto University</h1>
-                        <div className="border-t border-black flex justify-between w-full items-center text-center">
+                        <div className="border-t border-black flex flex-row md:flex-col justify-between w-full items-center text-center">
                             <div className="py-10 flex justify-center w-full">
                                 <CustomLink style={"underline text-[1.75rem] leading-[2.0625rem]"}>Study at Aalto</CustomLink>
                             </div>

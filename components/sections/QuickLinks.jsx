@@ -2,21 +2,37 @@ import Image from "next/image";
 import CustomLink from "../ui/CustomLink";
 import MainWrapper from "../wrappers/MainWrapper";
 import pen from "../../public/assets/pen.png"
+import folder from "../../public/assets/folder.png"
+import phone from "../../public/assets/phone.png"
 
 export default function QuickLinks() {
+    const items = [
+        {
+            img: pen,
+            text: "For personnel"
+        },
+        {
+            img: folder,
+            text: "Aalto Handbook"
+        },
+        {
+            img: phone,
+            text: "Safety"
+        }
+    ]
     return (
         <MainWrapper>
-            <div className="pt-[11.25rem]">
+            <div className="pt-[11.25rem] pb-2">
                 <h1 className="font-normal text-[1.75rem] text-[#2d2d2d] leading-[2.0625rem] text-center pb-4">Import quicklinks</h1>
-                <div className="flex flex-col md:flex-row justify-between px-24 cursor-pointer">
+                <div className="flex flex-col md:flex-row justify-between px-3 lg:px-24 cursor-pointer">
                     {
-                        [1, 2, 3].map(() => {
+                        items.map((item, i) => {
                             return (
-                                <div className="group flex items-center gap-2">
+                                <div className="group flex flex-col md:flex-row items-center gap-2">
                                     <span>
-                                        <Image src={pen} className="group-hover:opacity-80 w-20 rounded-full" />
+                                        <Image src={pen} key={i} className="group-hover:opacity-80 w-20 rounded-full" />
                                     </span>
-                                    <CustomLink>For personnel</CustomLink>
+                                    <CustomLink key={i} style="text-lg md:text-[1.3125rem]">{item.text}</CustomLink>
                                 </div>
                             )
                         })

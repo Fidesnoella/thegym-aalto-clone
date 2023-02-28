@@ -24,7 +24,7 @@ export default function QuickLinks() {
         <MainWrapper>
             <div className="pt-[11.25rem] pb-2">
                 <h1 className="font-normal text-[1.75rem] text-[#2d2d2d] leading-[2.0625rem] text-center pb-4">Import quicklinks</h1>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center md:items-stretch">
                     <div className="flex flex-col md:flex-row md:justify-between px-3 lg:px-24 cursor-pointer gap-4 justify-center">
                         {
                             items.map((item, i) => {

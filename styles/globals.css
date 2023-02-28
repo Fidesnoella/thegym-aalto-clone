@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.anime {
+    animation-name: rotate;
+    animation-duration: 120ms;
+}
+
+@keyframes rotate {
+   0% {
+    transform: translateX(500px);
+   } 
+}
+
+.scale {
+    animation-name: fromtop;
+    animation-duration: 200ms;
+}
+
+@keyframes fromtop {
+    0% {
+        transform: translateY(-500px);
+    }
+}
